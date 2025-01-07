@@ -1,0 +1,15 @@
+Date Start: 21 Dec, 2024
+Link: https://www.youtube.com/watch?v=eILUmCJhl64&t=1800s
+Github: https://github.com/Complete-Coding/React_Complete_YouTube
+
+Done Till:
+1:54:21 Ch-17: Introducing Bootstrap
+2:29:54
+Bootstrap:
+npm i bootstrap@5.3.3
+import "bootstrap/dist/css/bootstrap.min.css"
+
+Date: 04 Jan, 2025:
+Done Till: 4:26:00
+Not starting scripts disabled: resolve foloow https://chatgpt.com/c/677941e6-6214-8007-b884-7c1dfa441588
+Topics: Fragments / Map /Conditional Rendering / Passing Data Via Props / CSS Modules
