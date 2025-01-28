@@ -7,11 +7,12 @@ import ToDoItem from "./components/ToDoItem";
 
 import './Custom.css'
 import ToDoItemContainer from "./components/ToDoItemContainer";
+import { useState } from "react";
+import WelcomeMessage from "./components/WelcomeMessage";
 
 function App() {
-  // let toDoName = 'Buy Milk';
-    // let toDoDate = '21/12/2024';
-  const todoObj = [
+  
+  const initTodoObj = [
     {
       name: 'Buy Milk',
       dueDate: '21/12/2024'
@@ -25,13 +26,29 @@ function App() {
       dueDate: '04/01/2025'
     }
   ];
+
+  const [todoObj, setTodoObj] = useState([]);
+  const handleNewItem = (itemName, itemDate) => {
+    console.log(`new item added: ${itemName} Date: ${itemDate}`);
+    const newToDoObj = [...todoObj, {name: itemName, dueDate: itemDate}];
+    setTodoObj(newToDoObj);
+  }
+
+  
+  const handleDeleteItem = (delItemName) => {
+    console.log(`deleted item: ${delItemName}`);
+    const newToDoItems = todoObj.filter(item => item.name !== delItemName);
+    setTodoObj(newToDoItems);
+  }
+
   return ( 
     <center className='todo-container'>
       <AppName />
       
-      <AddTodo />
+      <AddTodo onNewItem={handleNewItem} />
 
-      <ToDoItemContainer toDoItems={todoObj} />
+      {todoObj.length ===0 && <WelcomeMessage />}
+      <ToDoItemContainer toDoItems={todoObj} onDeleteClick={handleDeleteItem} />
 
       {/* <div class="items-container">
         <ToDoItem toDoName="Buy Milk" toDoDate = '21/12/2024' />

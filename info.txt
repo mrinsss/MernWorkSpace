@@ -13,3 +13,11 @@ Date: 04 Jan, 2025:
 Done Till: 4:26:00
 Not starting scripts disabled: resolve foloow https://chatgpt.com/c/677941e6-6214-8007-b884-7c1dfa441588
 Topics: Fragments / Map /Conditional Rendering / Passing Data Via Props / CSS Modules
+
+Date: 07 Jan, 2025
+Done Till:6:22:00
+Topics: passing children (props.children) / Handling Events / Passing Function as props / Managing State / State vs Props
+
+Date: 28 Jan, 2025
+Done Till: 
+Topics: ToDo Project / react icon libary (npm install react-icons --save) / Inspect with React Dev Tools / 
