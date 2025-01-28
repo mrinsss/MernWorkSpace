@@ -19,5 +19,5 @@ Done Till:6:22:00
 Topics: passing children (props.children) / Handling Events / Passing Function as props / Managing State / State vs Props
 
 Date: 28 Jan, 2025
-Done Till: 
+Done Till: 7:39:00
 Topics: ToDo Project / react icon libary (npm install react-icons --save) / Inspect with React Dev Tools / 
